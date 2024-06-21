@@ -18,3 +18,7 @@ INSERT INTO Ages(name,age) VALUES('Fyn',31);
 INSERT INTO Ages(name,age) VALUES('Neshawn',17);
 
 SELECT HEX(concat(name, age)) AS X FROM Ages ORDER BY X LIMIT 1;
+
+
+output:'46796E3331'
+

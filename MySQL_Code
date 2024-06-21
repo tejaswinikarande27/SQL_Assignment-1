@@ -1,0 +1,20 @@
+##This code written in MySQL
+
+
+CREATE DATABASE SQLITE;
+USE SQLITE;
+
+CREATE TABLE Ages(
+name VARCHAR(128),
+age INTEGER
+);
+
+SET SQL_SAFE_UPDATES=0;
+DELETE FROM Ages;
+
+INSERT INTO Ages(name,age) VALUES('Mara',28);
+INSERT INTO Ages(name,age) VALUES('Otto',33);
+INSERT INTO Ages(name,age) VALUES('Fyn',31);
+INSERT INTO Ages(name,age) VALUES('Neshawn',17);
+
+SELECT HEX(concat(name, age)) AS X FROM Ages ORDER BY X LIMIT 1;
